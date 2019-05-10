@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUT Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="ui">
+        <label>
+            Convert from:
+            <select id="inputType">
+                <option value="image">Unwrapped image</option>
+                <option value="cube">.CUBE (Adobe)</option>
+            </select>
+        </label>
+        <label>
+            Convert to:
+            <select>
+                <option value="image">Unwrapped image</option>
+                <option value="cube">.CUBE (Adobe)</option>
+                <option value="csp">.CSP (CineSpace)</option>
+                <option value="3dl">.3DL (Nuke 32)</option>
+            </select>
+        </label>
+        <label>
+            Interpolate:
+            <input type="checkbox"><span>✓</span>
+        </label>
+        <label>
+            <input type="file" id="file">
+        </label>
+        <label>
+            Size:
+            <select>
+                <option value="8">8</option>
+                <option value="16">16</option>
+                <option value="32">32</option>
+            </select>
+        </label>
+    </div>
+
+    <div id="vis"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
